@@ -6,6 +6,7 @@ import { MsgItemComponent } from './msg-item/msg-item.component';
 
 @Injectable()
 export class MsgService {
+  counter = 0;
 
   constructor() { }
 
@@ -15,6 +16,11 @@ export class MsgService {
       new MsgItem( MsgItemComponent, { title: 'This is title 2',  body: 'This is body 2'} ),
       new MsgItem( MsgItemComponent, { title: 'This is title 3',  body: 'This is body 3'} ),
     ]
+  }
+
+  makeMsg() {
+    this.counter++;
+    return new MsgItem( MsgItemComponent, { title: `Add Message ${this.counter}`, body: 'body'});
   }
 
 }
