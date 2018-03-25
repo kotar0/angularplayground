@@ -12,15 +12,15 @@ export class MsgService {
 
   getMsgs() {
     return [
-      new MsgItem( MsgItemComponent, { title: 'This is title 1',  body: 'This is body 1'} ),
-      new MsgItem( MsgItemComponent, { title: 'This is title 2',  body: 'This is body 2'} ),
-      new MsgItem( MsgItemComponent, { title: 'This is title 3',  body: 'This is body 3'} ),
-    ]
+      new MsgItem(MsgItemComponent, { title: 'This is title 1', body: 'This is body 1' }),
+      new MsgItem(MsgItemComponent, { title: 'This is title 2', body: 'This is body 2' }),
+      new MsgItem(MsgItemComponent, { title: 'This is title 3', body: 'This is body 3' }),
+    ];
   }
 
   makeMsg() {
     this.counter++;
-    return new MsgItem( MsgItemComponent, { title: `Add Message ${this.counter}`, body: 'body'});
+    return new MsgItem(MsgItemComponent, { title: `Add Message ${this.counter}`, body: 'body' });
   }
 
 }

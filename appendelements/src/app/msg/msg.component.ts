@@ -16,14 +16,14 @@ export class MsgComponent implements OnInit {
   currentMsgIndex = -1;
   @ViewChild(MsgHostDirective) msgHost: MsgHostDirective;
 
-  constructor( private _componentFactoryResolver: ComponentFactoryResolver ) { }
+  constructor(private _componentFactoryResolver: ComponentFactoryResolver) { }
 
   ngOnInit() {
     this.loadComponent();
 
   }
 
-  loadComponent(){
+  loadComponent() {
     this.currentMsgIndex = (this.currentMsgIndex + 1) % this.msgs.length;
     const currentMsgItem = this.msgs[this.currentMsgIndex];
 

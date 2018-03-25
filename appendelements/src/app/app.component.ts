@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
     this.msgs = this._msgService.getMsgs();
   }
 
-  addMessage(){
+  addMessage() {
     this.msgs.push(this._msgService.makeMsg());
   }
 
