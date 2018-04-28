@@ -1,0 +1,16 @@
+.stateChangeBtn{
+  padding:10px 20px;
+  font-size: 20px;  
+}
+
+.contents{
+  position: fixed;
+  display: flex;
+  align-content: ;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  min-height: 40vh;
+}
