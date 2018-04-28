@@ -1,13 +1,45 @@
-.stateChangeBtn{
-  padding:10px 20px;
-  font-size: 20px;  
+/* reset style */
+button {
+  appearance: none;
+  border: none;
+  background-color: transparent;
 }
 
-.contents{
+.stateChangeBtn {
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #2888D9;
+  border-radius: 10px;
+  min-width: 187px;
+  height: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.state-normal{
+  background-color: #2888D9;  
+}
+
+
+.state-processing{
+  background-color:#526676;
+}
+
+.state-success{
+  background-color: #6AE573;
+}
+
+.state-error{
+  background-color: #F44B4B;
+}
+
+.msg--error{
+  color: #F22F2F;
+}
+
+.contents {
   position: fixed;
-  display: flex;
-  align-content: ;
-  flex-direction: column;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

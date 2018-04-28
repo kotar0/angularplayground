@@ -1,15 +1,24 @@
 <div class="contents">
   <div>
-    <button class="stateChangeBtn">Send</button>
+    <button class="stateChangeBtn state-normal">Send</button>
   </div>
-
+  <div>
+    <button class="stateChangeBtn state-processing">Processing</button>
+  </div>
+  <div>
+    <button class="stateChangeBtn state-success">Success</button>
+  </div>
+  <div>
+    <button class="stateChangeBtn state-error">Error</button>
+    <span class="msg--error">Error code:1 this is error message</span>
+  </div>
   <h4>Toggle Result</h4>
-  <input type="radio" name="toggleresult" id="toggleresult_success" checked="true">
-  <label for="toggleresult_success">
-    Success
-  </label>
-  <input type="radio" name="toggleresult" id="toggleresult_error" checked="true">
-  <label for="toggleresult_error">
-    Error
-  </label>
+  <form>
+    <label>
+      <input type="radio" name="toggleresult" id="toggleresult_success" value="success" checked="checked"> Success
+    </label>
+    <label>
+      <input type="radio" name="toggleresult" id="toggleresult_error" value="error"> Error
+    </label>
+  </form>
 </div>
