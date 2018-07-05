@@ -38,6 +38,11 @@ button {
   color: #F22F2F;
 }
 
+
+.state-done{
+  background-color: #CECECE;
+}
+
 .contents {
   position: fixed;
   top: 50%;

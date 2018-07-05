@@ -1,5 +1,11 @@
 <div class="contents">
   <div>
+    {{state}}
+  </div>
+  <div>
+    <button (click)="start()" >start</button>
+  </div>
+  <div>
     <button class="stateChangeBtn state-normal">Send</button>
   </div>
   <div>
@@ -11,6 +17,9 @@
   <div>
     <button class="stateChangeBtn state-error">Error</button>
     <span class="msg--error">Error code:1 this is error message</span>
+  </div>
+  <div>
+    <button class="stateChangeBtn state-done">Done</button>
   </div>
   <h4>Toggle Result</h4>
   <form>
