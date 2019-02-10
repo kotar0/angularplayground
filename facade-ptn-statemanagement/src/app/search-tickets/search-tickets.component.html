@@ -1,0 +1,13 @@
+<div><input type="text" placeholder="ticket" [formControl]="searchTerm" /></div>
+<div>
+  <input type="text" placeholder="user" [formControl]="assignedToUser" />
+</div>
+<section class="searchResults">
+  <div class="user" *ngFor="let result of (searchResult$ | async)">
+    <a routerLink="/ticket/{{result.ticket_id}}"
+      >message:{{ result.message }} ---|--- user:{{ result.user }} ---|--- status:{{
+        result.status
+      }}</a
+    >
+  </div>
+</section>
